@@ -1,6 +1,7 @@
 import React from 'react';
 import svglogo from './logo.svg';
 import { Counter } from './features/counter/Counter';
+import { Display } from './features/display/Display';
 import './App.css';
 import './css/footer.css';
 import './css/header.css';
@@ -44,6 +45,7 @@ function App() {
         </div>
       </header>
       <div id="content">
+        <Display />
         <div id="content-wrapper"></div>
         <div id="content-wrapper"></div>
       </div>
