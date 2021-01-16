@@ -1,0 +1,30 @@
+@import './global.scss';
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background: $header-footer-bg-colour;
+}
+
+#footer-wrapper{
+    display: grid;
+    padding-top: 39px;
+    max-width: 350px;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    color: #ffffff;
+    padding-left: $left-padding;
+    padding-right: $right-padding;
+
+    ul {
+        list-style-type: none;
+        text-align: left;
+        font-size: 8px;
+        line-height: 15px;
+        padding-left: 10px;
+        margin: 0;
+
+        li:first-child {
+            font-weight: bold;
+        }
+    }
+}
