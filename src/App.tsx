@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <header id="header-wrapper">
-        <img id="header-logo" src={logo}/>
+        <img id="header-logo" src={logo} alt="company logo"/>
         <div id="header-auth">
           <button id="signup-button"> Sign up </button>
           <button id="login-button"> Login </button>
@@ -49,7 +49,7 @@ function App() {
         <div id="content-wrapper"></div>
         <div id="content-wrapper"></div>
       </div>
-      <div className="App-header" style={{"display": "none"}}>
+      <div className="App-header">
         <img src={svglogo} className="App-logo" alt="logo" />
         <Counter />
         <p>
@@ -96,7 +96,7 @@ function App() {
       </div>
       <footer id="footer">
         <div id="footer-wrapper">
-          <img src={logoSmall}/>
+          <img src={logoSmall} alt="company-logo-small"/>
           <div>
             <ul>
               <li>Contact Us</li>
