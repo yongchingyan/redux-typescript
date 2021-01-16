@@ -1,20 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
 
+interface CounterState {
+    mode: string;
+}
+
+const initialState: CounterState = {
+    mode: "pc"
+}
+
 export const displaySlice = createSlice({
     name: 'display',
-    initialState: {
-        mode: "pc"
-    },
+    initialState,
     reducers: {
-        setPC: state => { 
-            console.log("set pc")
-            state.mode = "pc" 
-        },
-        setMobile: state => { 
-            console.log("set mobile")
-            state.mode = "mobile"
-        },
+        setPC: state => { state.mode = "pc" },
+        setMobile: state => { state.mode = "mobile" },
     },
 });
 
