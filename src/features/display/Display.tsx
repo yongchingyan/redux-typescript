@@ -5,6 +5,7 @@ import {
   setMobile,
   selectMode,
 } from './displaySlice';
+import "../../css/display.scss"
 
 // Component to detect and set the display mode in the redux store
 // Curently it will switch to mobile mode if the window.innerwidth is below a certain width
@@ -34,5 +35,5 @@ export const Display = () => {
         }
     })
 
-    return (<div>Current Display Mode: {mode}</div>)
+    return (<div id="display">Current Display Mode: {mode}</div>)
 }
