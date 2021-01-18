@@ -15,7 +15,7 @@ import "../../css/display.scss"
 // setting the display mode base on Browser type using window.navigator.userAgent
 // setting the display mode based on aspect ratio instead (window.innerwidth x window.innerHeight)
 
-const minPCWidth: number = 768
+const minPCWidth: number = 1000
 
 export const Display = () => {
 
@@ -35,5 +35,7 @@ export const Display = () => {
         }
     })
 
+    if (window.innerWidth < minPCWidth) dispatch(setMobile())
+    
     return (<div id="display">Current Display Mode: {mode}</div>)
 }
