@@ -1,0 +1,84 @@
+{
+    "assets": [
+        {
+          "imagePath": "img1.png",
+          "format": "big-sq big-font text-left-align",
+          "link": "/",
+          "content": {
+            "button": "Get Started!",
+            "overlay": true,
+            "text": "PLAY\nWIN\nEXCITE"
+          }
+        },
+        {
+          "imagePath": "img2.png",
+          "format": "small-sq",
+          "link": "/",
+          "content": {}
+        },
+        {
+          "imagePath": "img3.png",
+          "format": "small-sq",
+          "link": "/",
+          "content": {}
+        },
+        {
+          "imagePath": "img4.png",
+          "format": "small-sq",
+          "link": "/",
+          "content": {}
+        },
+        {
+          "imagePath": "img5.png",
+          "format": "small-sq",
+          "link": "/",
+          "content": {}
+        },
+        {
+          "imagePath": "img6.png",
+          "format": "rect small-font text-center-align",
+          "link": "/",
+          "content": {
+            "text": "LIVE GAMES\nWITH FRIENDS",
+            "prompt": "EXPLORE"
+          }
+        },
+        {
+          "imagePath": "img7.png",
+          "format": "small-sq",
+          "link": "/",
+          "content": {}
+        },
+        {
+          "imagePath": "img8.png",
+          "format": "small-sq",
+          "link": "/",
+          "content": {} 
+        },
+        {
+          "imagePath": "img9.png",
+          "format": "small-sq",
+          "link": "/",
+          "content": {}
+        },
+        {
+          "imagePath": "img10.png",
+          "format": "small-sq small-font text-center-align",
+          "link": "/",
+          "content": {
+            "overlay": true,
+            "text": "ESPORTS"
+          }
+        },
+        {
+          "imagePath": "img11.png",
+          "format": "rect big-font text-left-align",
+          "link": "/",
+          "content": {
+            "overlay": true,
+            "text": "LOVE PLAYING?\nJOIN THE LEAGUE",
+            "prompt": "APPLY NOW"
+          }
+        }
+    ]
+}

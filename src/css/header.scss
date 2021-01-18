@@ -45,13 +45,14 @@
     }
 }
 
-button {
-    display: inline;
+#login-button{
+    @extend %button;
     float: right;
-    border: 0; 
-    border-radius: 0.25em;
-    padding: 5px 25px 5px 25px;
-    margin: 5px 10px 0px 10px;
+}
+
+#signup-button{
+    @extend %button-red;
+    float: right;
 }
 
 #nav-support {
