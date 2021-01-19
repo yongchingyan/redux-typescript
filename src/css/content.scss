@@ -41,7 +41,7 @@ $smallsq-height: 50em;
         }
         h3 {
             margin: auto;
-            color: white;
+            color: $white;
             font-weight: bold;
             white-space: pre-wrap;
             z-index: 2;
@@ -61,7 +61,7 @@ $smallsq-height: 50em;
             bottom: 10%;
             right: 1%;
             text-decoration: none;
-            color: white;
+            color: $white;
             z-index: 2;
             letter-spacing: 3px;
         }
@@ -72,7 +72,7 @@ $smallsq-height: 50em;
             position: absolute;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.6);
+            background: $black-60percent;
             z-index: 1;
         }
     }
@@ -80,14 +80,14 @@ $smallsq-height: 50em;
 
 .small-sq {
     @extend %box;
-    background: white;
+    background:  $default-bg;
 }
 
 .rect {
     @extend %box;
     grid-column-end: span 2;
     // width: $smallsq-height * 2 + $margin * 2;
-    background: yellow;
+    background: $default-bg;
     &.big-font h3{
         position: absolute;
         top: 15%;
@@ -100,7 +100,7 @@ $smallsq-height: 50em;
     // width: $smallsq-height * 2 + $margin * 2;
     grid-row-end: span 2;
     grid-column-end: span 2;
-    background: red;
+    background:  $default-bg;
     h3{
         margin-bottom: 20px;
         padding-top: 10%;

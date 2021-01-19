@@ -4,6 +4,9 @@ $header-footer-bg-colour: #000000;
 $content-bg-colour: #2A2A2A;
 $panel-bg-colour: #000000;
 $red: #BB0000;
+$white: #FFFFFF;
+$default-bg: linear-gradient(black, white);
+$black-60percent: rgba(0,0,0,0.6);
 
 %button {
     display: inline;

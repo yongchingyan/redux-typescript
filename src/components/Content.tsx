@@ -37,9 +37,6 @@ export class MainContent extends Component<{}, { assetsStore: AssetData[] }> {
         });
     }
 
-    // const [imageSrc, setImage] = useState('');
-    // import("../asset/logo.png").then(image=>setImage(image.default));
-    
     render() {
 
         let content; 
@@ -81,16 +78,6 @@ export class MainContent extends Component<{}, { assetsStore: AssetData[] }> {
                     { this.state.assetsStore.length > 0 ? 
                         content
                      : null}
-                {/* <div className="small-sq"> </div>
-                <div className="small-sq"> </div>
-                <div className="small-sq"> </div>
-                <div className="small-sq"> </div>
-                <div className="rect"></div>
-                <div className="small-sq"> </div>
-                <div className="small-sq"> </div>
-                <div className="small-sq"> </div>
-                <div className="small-sq"> </div>
-                <div className="rect"></div> */}
                 </div>
             </div>
         )
