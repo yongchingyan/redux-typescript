@@ -23,49 +23,58 @@ $smallsq-height: 50em;
     height: 100%;
     overflow: hidden;
     position: relative;
+    min-height: 200px;
     display:grid;
     grid-row: auto;
-    min-height: 200px;
-    img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        top: 0;
-        z-index: 0
-    }
-    h3 {
-        margin: auto;
-        color: white;
-        font-weight: bold;
-        white-space: pre-wrap;
-        z-index: 2;
-        line-height: 100%;
-    }
-    button {
-        @extend %button-red;
-        margin: 0 auto 10% auto;
-        max-height: 30px;
-        z-index: 2;
-    }
-    .prompt {
-        position: absolute;
-        bottom: 10%;
-        right: 1%;
+    .clickable-div{
+        display:grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: auto;
         text-decoration: none;
-        color: white;
-        z-index: 2;
-        letter-spacing: 3px;
-    }
-    a::after{
-        content: " 〉";
-    }
-    .overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.6);
-        z-index: 1;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            z-index: 0
+        }
+        h3 {
+            margin: auto;
+            color: white;
+            font-weight: bold;
+            white-space: pre-wrap;
+            z-index: 2;
+            line-height: 100%;
+        }
+        button {
+            @extend %button-red;
+            margin: 0 auto 10% auto;
+            max-height: 30px;
+            z-index: 2;
+            &:hover{
+                @extend %border-glow;
+            }
+        }
+        .prompt {
+            position: absolute;
+            bottom: 10%;
+            right: 1%;
+            text-decoration: none;
+            color: white;
+            z-index: 2;
+            letter-spacing: 3px;
+        }
+        .prompt::after{
+            content: " 〉";
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 1;
+        }
     }
 }
 
@@ -79,6 +88,11 @@ $smallsq-height: 50em;
     grid-column-end: span 2;
     // width: $smallsq-height * 2 + $margin * 2;
     background: yellow;
+    &.big-font h3{
+        position: absolute;
+        top: 15%;
+        left: 10%;
+    }    
 }
 .big-sq {
     @extend %box;
@@ -88,8 +102,8 @@ $smallsq-height: 50em;
     grid-column-end: span 2;
     background: red;
     h3{
-        margin-bottom: 10px;
-        padding-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 10%;
     }
 }
 
@@ -108,5 +122,9 @@ $smallsq-height: 50em;
 
     .prompt {
         visibility: hidden;
+    }
+
+    .clickable-div h3 {
+        padding-bottom: 10px;
     }
 } 

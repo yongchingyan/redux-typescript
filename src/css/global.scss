@@ -2,7 +2,7 @@ $left-padding: 51px;
 $right-padding: 51px;
 $header-footer-bg-colour: #000000;
 $content-bg-colour: #2A2A2A;
-$panel-bg-colour: #2A2A2A;
+$panel-bg-colour: #000000;
 $red: #BB0000;
 
 %button {
@@ -11,6 +11,14 @@ $red: #BB0000;
     border-radius: 0.25em;
     padding: 5px 25px 5px 25px;
     margin: 5px 10px 0px 10px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+%border-glow{
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
 }
 
 %button-red{
@@ -21,7 +29,7 @@ $red: #BB0000;
 }
 
 .small-font h3 {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .big-font h3 {

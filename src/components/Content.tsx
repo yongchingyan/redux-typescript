@@ -65,8 +65,10 @@ export class MainContent extends Component<{}, { assetsStore: AssetData[] }> {
 
             return (
                 <div className={asset.format}>
-                    {temp}
-                    <img src={asset.imagePath}/> 
+                    <a className="clickable-div" href={asset.link}>
+                        {temp}
+                        <img src={asset.imagePath}/> 
+                    </a>
                 </div> 
             )
         })

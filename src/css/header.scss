@@ -25,6 +25,22 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
+
+        #login-button{
+            @extend %button;
+            float: right;
+            &:hover{
+                @extend %border-glow;
+            }
+        }
+        
+        #signup-button{
+            @extend %button-red;
+            float: right;
+            &:hover{
+                @extend %border-glow;
+            }
+        }
     }
     
     #header-nav {
@@ -49,13 +65,13 @@
         }
         li:hover{
             color: red;
-            
+            cursor: pointer;
         }
-        li::before{
+        li:hover::after{
             position: absolute;
-            top: 25px;
-            left: -5px;
-            height: 5px;
+            top: 23px;
+            left: 0px;
+            height: 3px;
             width: 100%;
             background: red;
             z-index: 4;
@@ -70,17 +86,7 @@
             float: left;
         }
     
-    }
-    #login-button{
-        @extend %button;
-        float: right;
-    }
-    
-    #signup-button{
-        @extend %button-red;
-        float: right;
-    }
-        
+    }     
 }
 
 
@@ -103,11 +109,17 @@
             #login-button{
                 @extend %button;
                 font-size: 25px;
+                &:hover{
+                    @extend %border-glow;
+                }
             }
             
             #signup-button{
                 @extend %button-red;
                 font-size: 25px;
+                &:hover{
+                    @extend %border-glow;
+                }
             }
         }
 
@@ -125,6 +137,10 @@
                 color: white;
                 font-size: 20px;
                 padding: 20px;
+            }
+            li:hover{
+                color: red;
+                cursor: pointer;   
             }
         }
     }
