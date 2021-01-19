@@ -16,7 +16,7 @@ const HeaderAuth = () => (
 
 const HeaderNav = () => (
     <div id="header-nav">
-        <ul className="text-align-left" id="nav-games">
+        <ul className="text-align-left with-indicator" id="nav-games">
             <li>Home</li>
             <li>RPG</li>
             <li>Arcade</li>
@@ -28,6 +28,9 @@ const HeaderNav = () => (
         </ul>
     </div>
 )
+
+// https://css-tricks.com/creating-an-animated-menu-indicator-with-css-selectors/
+
 
 export const Header = () => {
     
