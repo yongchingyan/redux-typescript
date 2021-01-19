@@ -1,8 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import '../css/header.scss';
 import logo from '../asset/logo.png';
 import { useSelector } from 'react-redux';
 import { selectMode } from '../features/display/displaySlice';
+import Close from '../asset/close.png'
+import Dropdown from '../asset/dropdown.png'
+import { url } from 'inspector';
 
 const HeaderAuth = () => (
     <div id="header-auth">
@@ -30,6 +33,12 @@ export const Header = () => {
     
     const mode = useSelector(selectMode)
     const [isActive, toggleActive] = useState(false)
+
+    useEffect(()=>{
+        if ( mode!="mobile" && isActive) {
+            toggleActive(!isActive)
+        }
+    })
     
     return (
         <header className={mode} id="header-wrapper">
@@ -48,10 +57,9 @@ export const Header = () => {
                                     <HeaderAuth />
                                     <HeaderNav />
                                 </div>
-                                <button className="panel-button" onClick={()=>toggleActive(!isActive)}> X </button>
+                                <button className="panel-button" onClick={()=>toggleActive(!isActive)} style={{"backgroundImage": `url(${Close})`}}/>
                             </React.Fragment>
-                        ) : null}
-                        <div><button className="panel-button" onClick={()=>toggleActive(!isActive)}> === </button></div>
+                        ) : <div><button className="panel-button" onClick={()=>toggleActive(!isActive)} style={{"backgroundImage": `url(${Dropdown})`}}/></div>}
                     </React.Fragment>
                 )
             }

@@ -71,26 +71,26 @@
     #panel {
         display: grid;
         grid-column: 1fr;
-        grid-template-rows: 50px auto;
+        grid-template-rows: 80px auto 920px;
         position: absolute;
         top: 70px;
         left: 0px;
         width: 100%;
-        height:100%;
-        background: $content-bg-colour;
-        height: 100%;
+        background: $panel-bg-colour;
         z-index: 3;
 
         #header-auth{
-            margin:5%;
+            padding-top:20px;
             display: block;
             
             #login-button{
                 @extend %button;
+                font-size: 25px;
             }
             
             #signup-button{
                 @extend %button-red;
+                font-size: 25px;
             }
         }
 
@@ -107,6 +107,7 @@
             li {
                 color: white;
                 font-size: 20px;
+                padding: 20px;
             }
         }
     }
@@ -117,13 +118,13 @@
     position: absolute;
     right:30px;
     top: 20px;
-    color: white;
     margin: 0px;
     padding: 0px;
-    background: grey;
-    height: 30px;
-    width: 30px;
+    background: no-repeat;
+    height: 35px;
+    width: 35px;
     text-align: center;
+    border-radius: 0;
 }
 
 @media screen and (max-width: 1000px) {
