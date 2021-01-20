@@ -1,8 +1,13 @@
 This is technical assignment was implement in one week.
+
 The goal is to create a responsive site without the usage of a design framework library like Bootstrap. 
+
 Due to time constraints it was bootstrapped with the create-react-app using the redux-typescript template. 
+
 The mockup of the website is located in `src/asset/assets.json`.
+
 `Lunacy` was used to view the sketch file to extract the assets.
+
 A demonstration video is included in case the project fails to build `./Tech Assessment - Demo Vid.mp4`
 
 ## QuickStart
@@ -47,3 +52,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
                 `App.test.tsx` tests that the `Display` react component is able to detect 
                 the change in display mode (pc => mobile) when the windows width is below 1000px. 
 
+Entry point for the React project => `./src/index.tsx`
