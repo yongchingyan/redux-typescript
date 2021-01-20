@@ -9,7 +9,7 @@ export const Footer = () => {
             <img src={logoSmall} alt="company-logo-small"/>
             <div>
                 <ul>
-                <li>Contact Us</li>
+                <span>Contact Us</span>
                 <li>Help Center</li>
                 <li>The Group</li>
                 <li>Affliates</li>
@@ -17,7 +17,7 @@ export const Footer = () => {
             </div>
             <div>
                 <ul>
-                <li>Information</li>
+                <span>Information</span>
                 <li>Terms & Conditions</li>
                 <li>Payment methods</li>
                 <li>Bonus Terms</li>

@@ -86,18 +86,10 @@ $smallsq-height: 50em;
 .rect {
     @extend %box;
     grid-column-end: span 2;
-    // width: $smallsq-height * 2 + $margin * 2;
-    background: $default-bg;
-    &.big-font h3{
-        position: absolute;
-        top: 15%;
-        left: 10%;
-    }    
+    background: $default-bg; 
 }
 .big-sq {
     @extend %box;
-    // height: $smallsq-height * 2 + $margin * 2;
-    // width: $smallsq-height * 2 + $margin * 2;
     grid-row-end: span 2;
     grid-column-end: span 2;
     background:  $default-bg;

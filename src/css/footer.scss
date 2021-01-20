@@ -23,8 +23,13 @@
         padding-left: 10px;
         margin: 0;
 
-        li:first-child {
+        span:first-child {
             font-weight: bold;
+        }
+
+        li:hover{
+            color: $red;
+            cursor: pointer;
         }
     }
 }
