@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 import { selectMode } from '../features/display/displaySlice';
 import Close from '../asset/close.png'
 import Dropdown from '../asset/dropdown.png'
-import { url } from 'inspector';
 
 const HeaderAuth = () => (
     <div id="header-auth">
@@ -28,9 +27,6 @@ const HeaderNav = () => (
         </ul>
     </div>
 )
-
-// https://css-tricks.com/creating-an-animated-menu-indicator-with-css-selectors/
-
 
 export const Header = () => {
     
