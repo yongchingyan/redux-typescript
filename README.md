@@ -1,4 +1,4 @@
-This technical assignment was implemented in one week.
+This technical assessment was implemented in one week.
 
 The goal is to create a responsive site without the usage of a design framework library like Bootstrap. 
 
@@ -43,7 +43,8 @@ To run the Jest test.
 
 -	Consumption of a JSON file to render content
 
-                `.src/asset/assets.json` is used to dynamically generate the game banners in the main content part of the website
+                `.src/asset/assets.json` is used to dynamically generate the game banners 
+                in the main content part of the website
 
 -	Creation of 1 frontend unit test case on 1 of your components with Jest and Enzyme 
 
