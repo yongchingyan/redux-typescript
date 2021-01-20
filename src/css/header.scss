@@ -120,6 +120,7 @@
                 &:hover{
                     @extend %border-glow;
                 }
+                margin-left:$left-padding;
             }
         }
 
