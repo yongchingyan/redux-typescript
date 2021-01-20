@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display should switch to mobile mode with windows innerwidth changes to below 1000px 1`] = `
+<div
+  id="display"
+>
+  Current Display Mode: 
+  pc
+</div>
+`;
+
+exports[`Display should switch to mobile mode with windows innerwidth changes to below 1000px 2`] = `
+<div
+  id="display"
+>
+  Current Display Mode: 
+  pc
+</div>
+`;
