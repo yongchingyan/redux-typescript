@@ -36,7 +36,7 @@ export class MainContent extends Component<IProps, IState> {
     componentDidMount() {
         // this.setState({assetsStore: []})
         let assetsStore: any[] = []
-        data.assets.map((asset, key) => {
+        data.assets.forEach((asset, key) => {
             import(`../asset/${asset.imagePath}`)
             .then(image=>{
                 assetsStore[key] = {...asset, image: image.default}
@@ -89,7 +89,7 @@ export class MainContent extends Component<IProps, IState> {
                             <React.Fragment >
                                 {temp}  
                             </React.Fragment>
-                            <img key={`img-${asset.imagePath}`} src={asset.image}/> 
+                            <img key={`img-${asset.imagePath}`} alt="Game Banner" src={asset.image}/> 
                         </a>
                     </div> 
                 )
@@ -101,7 +101,7 @@ export class MainContent extends Component<IProps, IState> {
             <div id="content">
                 {/* <img src={imageSrc} /> */}
                 <div className="wrapper">
-                    { this.state.assetsStore && this.state.assetsStore.length > 0 ? 
+                    { assetsStore && assetsStore.length > 0 ? 
                         content
                      : null}
                 </div>

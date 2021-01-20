@@ -34,16 +34,16 @@ export const Header = () => {
     const [isActive, toggleActive] = useState(false)
 
     useEffect(()=>{
-        if ( mode!="mobile" && isActive) {
+        if ( mode!=="mobile" && isActive) {
             toggleActive(!isActive)
         }
-    })
+    }, [mode, isActive])
     
     return (
         <header className={mode} id="header-wrapper">
             <img id="header-logo" src={logo} alt="company logo"/>
             {
-                mode=="pc"? (
+                mode==="pc"? (
                     <React.Fragment>
                         <HeaderAuth/>
                         <HeaderNav/>
