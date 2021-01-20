@@ -1,8 +1,8 @@
-This is technical assignment was implement in one week.
+This technical assignment was implemented in one week.
 
 The goal is to create a responsive site without the usage of a design framework library like Bootstrap. 
 
-Due to time constraints it was bootstrapped with the create-react-app using the redux-typescript template. 
+Due to time constraints the project was created with the create-react-app using the redux-typescript template. 
 
 The mockup of the website is located in `src/asset/assets.json`.
 
